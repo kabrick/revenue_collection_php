@@ -189,10 +189,29 @@
                 display: none;
             }
         }
+
+        .white-box{
+            background:#fff;
+            padding:25px;
+            margin-bottom:15px
+        }
+        .white-box .box-title{
+            margin:0 0 12px;
+            font-weight:500;
+            text-transform:uppercase;
+            font-size:14px
+        }
+        .color-bordered-table.success-bordered-table{
+            border:2px solid #6d7fcc
+        }
+        .color-bordered-table.success-bordered-table thead th{
+            background-color:#6d7fcc;
+            color:#fff
+        }
     </style>
 </head>
 <body>
-    <div id="app">
+    <div id="app" style="background-color: #f2f2f2">
         <div class="wrapper">
             @include('layouts.sidebar')
 

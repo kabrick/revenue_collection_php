@@ -22,3 +22,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::any('/store_owners/create', 'StoreOwnersController@create')->name('store_owners.create');
+Route::any('/store_owners/save', 'StoreOwnersController@save')->name('store_owners.save');
+Route::any('/store_owners/view', 'StoreOwnersController@view')->name('store_owners.view');
+Route::any('/store_owners/edit/{id}', 'StoreOwnersController@edit');
+Route::any('/store_owners/update', 'StoreOwnersController@update')->name('store_owners.update');
