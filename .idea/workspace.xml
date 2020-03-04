@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011f1e13-790c-404c-bdd5-45a4ff8d5cf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/StoreOwnersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/StoreOwner.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_03_03_144001_create_store_owners_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/store_owners/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/store_owners/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/store_owners/view.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/peter_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/peter_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StoreOwnersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StoreOwnersController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +154,7 @@
       <workItem from="1582785560516" duration="110000" />
       <workItem from="1582895107597" duration="844000" />
       <workItem from="1583214885030" duration="19836000" />
-      <workItem from="1583305419837" duration="975000" />
+      <workItem from="1583305419837" duration="1854000" />
     </task>
     <servers />
   </component>

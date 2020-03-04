@@ -13,6 +13,12 @@ class StoreOwnersController extends Controller {
     }
 
     public function save(Request $request) {
+        if (strlen($request->contact) != 10){
+            return Redirect::to("/store_owners/create")->withFail('An error occurred. Please enter exactly 10 digits for the contact');
+        } elseif (!in_array(str_split($request->contact, 3)[0], ["077", "070", "075"])) {
+            return Redirect::to("/store_owners/create")->withFail('An error occurred. Please enter number beginning with 077, 075 or 070');
+        }
+
         $store_owner = new StoreOwner();
         $store_owner->first_name = $request->first_name;
         $store_owner->last_name = $request->last_name;
@@ -42,6 +48,12 @@ class StoreOwnersController extends Controller {
     }
 
     public function update(Request $request) {
+        if (strlen($request->contact) != 10){
+            return Redirect::to("/store_owners/edit/" . $request->id)->withFail('An error occurred. Please enter exactly 10 digits for the contact');
+        } elseif (!in_array(str_split($request->contact, 3)[0], ["077", "070", "075"])) {
+            return Redirect::to("/store_owners/edit/" . $request->id)->withFail('An error occurred. Please enter number beginning with 077, 075 or 070');
+        }
+
         $store_owner = StoreOwner::find($request->id);
         $store_owner->first_name = $request->first_name;
         $store_owner->last_name = $request->last_name;
