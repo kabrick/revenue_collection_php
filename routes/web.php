@@ -30,3 +30,5 @@ Route::any('/store_owners/edit/{id}', 'StoreOwnersController@edit');
 Route::any('/store_owners/update', 'StoreOwnersController@update')->name('store_owners.update');
 Route::any('/store_owners/receive_payment/{id}', 'StoreOwnersController@receive_payment');
 Route::any('/store_owners/complete_payment', 'StoreOwnersController@complete_payment')->name('store_owners.complete_payment');
+Route::any('/settings/edit_fees', 'SettingsController@edit_fees')->name('settings.edit_fees');
+Route::any('/settings/save_fees', 'SettingsController@save_fees')->name('settings.save_fees');

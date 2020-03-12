@@ -17,6 +17,14 @@
             </ul>
         </li>
         <li>
+            <a href="#settings" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Settings</a>
+            <ul class="collapse list-unstyled" id="settings">
+                <li>
+                    <a href="{{ route('settings.edit_fees') }}">Fees</a>
+                </li>
+            </ul>
+        </li>
+        <li>
             <a href="#">Other</a>
         </li>
     </ul>
