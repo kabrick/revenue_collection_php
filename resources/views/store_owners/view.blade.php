@@ -22,7 +22,7 @@
                     <th>Shop Location</th>
                     <th>Shop Type</th>
                     <th>Contact</th>
-                    <th></th>
+                    <th colspan="2"></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -41,6 +41,9 @@
                                 @endif
                             </td>
                             <td>{{ $store_owner->contact }}</td>
+                            <td>
+                                <a class="btn btn-success text-white" href="/store_owners/receive_payment/{{ $store_owner->id }}">Receive Payment</a>
+                            </td>
                             <td>
                                 <a class="btn btn-info text-white" href="/store_owners/edit/{{ $store_owner->id }}">Edit</a>
                             </td>

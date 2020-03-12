@@ -28,3 +28,5 @@ Route::any('/store_owners/save', 'StoreOwnersController@save')->name('store_owne
 Route::any('/store_owners/view', 'StoreOwnersController@view')->name('store_owners.view');
 Route::any('/store_owners/edit/{id}', 'StoreOwnersController@edit');
 Route::any('/store_owners/update', 'StoreOwnersController@update')->name('store_owners.update');
+Route::any('/store_owners/receive_payment/{id}', 'StoreOwnersController@receive_payment');
+Route::any('/store_owners/complete_payment', 'StoreOwnersController@complete_payment')->name('store_owners.complete_payment');

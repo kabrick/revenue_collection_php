@@ -21,8 +21,7 @@ class LoginController extends Controller
 
     use AuthenticatesUsers;
 
-    public function username()
-    {
+    public function username() {
         return 'user_name';
     }
 
