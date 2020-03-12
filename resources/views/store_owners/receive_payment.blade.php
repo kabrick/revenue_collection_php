@@ -53,7 +53,11 @@
 
                 <div class="form-group">
                     {{ Form::label('amount_paid', 'Amount To Pay') }}
-                    {{ Form::number('amount_paid', '', ['class' => 'form-control']) }}
+                    @if($store_owner->shop_type == 1)
+                        {{ Form::number('amount_paid', $settings->retail, ['class' => 'form-control', 'readonly']) }}
+                    @else
+                        {{ Form::number('amount_paid', $settings->wholesale, ['class' => 'form-control', 'readonly']) }}
+                    @endif
                 </div>
 
                 <div class="form-group">

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Payment;
+use App\Settings;
 use App\StoreOwner;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -90,7 +91,9 @@ class StoreOwnersController extends Controller {
             $years[$year] = $year;
         }
 
-        return view('store_owners.receive_payment', compact('store_owner', 'months', 'years'));
+        $settings = Settings::find(1);
+
+        return view('store_owners.receive_payment', compact('store_owner', 'months', 'years', 'settings'));
     }
 
     public function complete_payment(Request $request) {
