@@ -33,3 +33,5 @@ Route::any('/store_owners/complete_payment', 'StoreOwnersController@complete_pay
 
 Route::any('/settings/edit_fees', 'SettingsController@edit_fees')->name('settings.edit_fees');
 Route::any('/settings/save_fees', 'SettingsController@save_fees')->name('settings.save_fees');
+
+Route::any('/reports/payments', 'ReportsController@payments')->name('reports.payments');

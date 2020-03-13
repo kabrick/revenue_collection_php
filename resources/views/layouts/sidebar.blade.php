@@ -17,6 +17,14 @@
             </ul>
         </li>
         <li>
+            <a href="#reports" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reports</a>
+            <ul class="collapse list-unstyled" id="reports">
+                <li>
+                    <a href="{{ route('reports.payments') }}">Payment Reports</a>
+                </li>
+            </ul>
+        </li>
+        <li>
             <a href="#settings" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Settings</a>
             <ul class="collapse list-unstyled" id="settings">
                 <li>

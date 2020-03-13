@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011f1e13-790c-404c-bdd5-45a4ff8d5cf1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/reports/payments.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StoreOwnersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StoreOwnersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/store_owners/receive_payment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store_owners/receive_payment.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +164,8 @@
       <workItem from="1583560124547" duration="2516000" />
       <workItem from="1583583442685" duration="1221000" />
       <workItem from="1583733449461" duration="1247000" />
-      <workItem from="1584016641119" duration="5337000" />
+      <workItem from="1584016641119" duration="6343000" />
+      <workItem from="1584074124308" duration="4293000" />
     </task>
     <servers />
   </component>
@@ -182,17 +184,17 @@
       <screen x="70" y="27" width="1296" height="741" />
     </state>
     <state x="501" y="155" width="424" height="491" key="FileChooserDialogImpl/70.27.1296.741@70.27.1296.741" timestamp="1583215940066" />
-    <state x="511" y="322" width="404" height="158" key="NewPhpFileDialog" timestamp="1584019303239">
+    <state x="511" y="322" width="404" height="158" key="NewPhpFileDialog" timestamp="1584091293005">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
-    <state x="511" y="322" width="404" height="158" key="NewPhpFileDialog/70.27.1296.741@70.27.1296.741" timestamp="1584019303239" />
+    <state x="511" y="322" width="404" height="158" key="NewPhpFileDialog/70.27.1296.741@70.27.1296.741" timestamp="1584091293005" />
     <state x="348" y="97" width="739" height="600" key="find.popup" timestamp="1583308970630">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
     <state x="348" y="97" width="739" height="600" key="find.popup/70.27.1296.741@70.27.1296.741" timestamp="1583308970630" />
-    <state x="381" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1584019216897">
+    <state x="381" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1584092670622">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
-    <state x="381" y="89" width="672" height="678" key="search.everywhere.popup/70.27.1296.741@70.27.1296.741" timestamp="1584019216897" />
+    <state x="381" y="89" width="672" height="678" key="search.everywhere.popup/70.27.1296.741@70.27.1296.741" timestamp="1584092670622" />
   </component>
 </project>
