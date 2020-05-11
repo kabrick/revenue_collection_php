@@ -17,20 +17,28 @@ class StoreOwnersController extends Controller {
     public function save(Request $request) {
         if (strlen($request->contact) != 10){
             return Redirect::to("/store_owners/create")->withFail('An error occurred. Please enter exactly 10 digits for the contact');
-        } elseif (!in_array(str_split($request->contact, 3)[0], ["077", "070", "075"])) {
+        } elseif (!in_array(str_split($request->contact, 3)[0], ["077", "070", "075", "078"])) {
             return Redirect::to("/store_owners/create")->withFail('An error occurred. Please enter number beginning with 077, 075 or 070');
         }
+
+        $formatted_contact = "+256" . substr($request->contact, 1);
 
         $store_owner = new StoreOwner();
         $store_owner->first_name = $request->first_name;
         $store_owner->last_name = $request->last_name;
-        $store_owner->contact = $request->contact;
+        $store_owner->contact = $formatted_contact;
         $store_owner->shop_name = $request->shop_name;
         $store_owner->shop_type = $request->shop_type;
         $store_owner->location = $request->location;
         $store_owner->created_by = Auth::id();
 
         if ($store_owner->save()){
+            $sms_message = "Hello " . $request->first_name . " " . $request->last_name .
+                        ". You have been registered as a shop owner of a " . ($request->shop_type == 1 ? "retail" : "wholesale")
+                        . " shop called " . $request->shop_name . " located in " . $request->location;
+
+            send_sms($formatted_contact, $sms_message);
+
             return Redirect::to("/store_owners/view")->withSuccess('Shop owner details saved');
         } else {
             return Redirect::to("/store_owners/create")->withFail('An error occurred. Shop owner details not saved.');
