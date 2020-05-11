@@ -2,6 +2,7 @@
 
 namespace App\Console;
 
+use App\Console\Commands\PaymentPenaltyCommand;
 use App\Console\Commands\PaymentWarningCommand;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -14,6 +15,7 @@ class Kernel extends ConsoleKernel {
      */
     protected $commands = [
         PaymentWarningCommand::class,
+        PaymentPenaltyCommand::class,
     ];
 
     /**
@@ -24,6 +26,7 @@ class Kernel extends ConsoleKernel {
      */
     protected function schedule(Schedule $schedule) {
         $schedule->command('payment:warning')->monthlyOn(3, '9:00');
+        $schedule->command('payment:penalty')->monthlyOn(10, '9:00');
     }
 
     /**
