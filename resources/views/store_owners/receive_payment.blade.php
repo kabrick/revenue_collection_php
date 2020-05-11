@@ -25,7 +25,7 @@
                     {{ Form::label('shop_name', 'Shop Name') }}
                     {{ Form::text('shop_name', $store_owner->shop_name, ['class' => 'form-control', 'readonly']) }}
                 </div>
-
+                UsersSeeder
                 <div class="form-group">
                     {{ Form::label('contact', 'Phone') }}
                     {{ Form::text('contact', $store_owner->contact, ['class' => 'form-control', 'readonly']) }}
