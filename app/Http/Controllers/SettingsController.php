@@ -22,4 +22,18 @@ class SettingsController extends Controller {
 
         return Redirect::to("/settings/edit_fees")->withSuccess('Fees have been updated successfully');
     }
+
+    public function edit_penalty_fees() {
+        $settings = Settings::find(1);
+
+        return view('settings.edit_penalty_fees', compact('settings'));
+    }
+
+    public function save_penalty_fees(Request $request) {
+        $settings = Settings::find(1);
+        $settings->penalty = $request->penalty;
+        $settings->save();
+
+        return Redirect::to("/settings/edit_penalty_fees")->withSuccess('Fees have been updated successfully');
+    }
 }

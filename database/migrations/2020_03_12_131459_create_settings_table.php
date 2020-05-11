@@ -15,6 +15,7 @@ class CreateSettingsTable extends Migration {
             $table->bigIncrements('id');
             $table->integer('retail');
             $table->integer('wholesale');
+            $table->integer('penalty');
             $table->timestamps();
         });
     }
