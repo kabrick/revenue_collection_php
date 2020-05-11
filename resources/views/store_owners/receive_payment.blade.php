@@ -18,14 +18,14 @@
             <div class="col-md-6">
                 <div class="form-group">
                     {{ Form::label('first_name', 'Shop Owner Name') }}
-                    {{ Form::text('first_name', ($store_owner->first_name . $store_owner->last_name), ['class' => 'form-control', 'readonly']) }}
+                    {{ Form::text('first_name', ($store_owner->first_name . " " . $store_owner->last_name), ['class' => 'form-control', 'readonly']) }}
                 </div>
 
                 <div class="form-group">
                     {{ Form::label('shop_name', 'Shop Name') }}
                     {{ Form::text('shop_name', $store_owner->shop_name, ['class' => 'form-control', 'readonly']) }}
                 </div>
-                UsersSeeder
+
                 <div class="form-group">
                     {{ Form::label('contact', 'Phone') }}
                     {{ Form::text('contact', $store_owner->contact, ['class' => 'form-control', 'readonly']) }}

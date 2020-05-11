@@ -105,6 +105,11 @@ class StoreOwnersController extends Controller {
     }
 
     public function complete_payment(Request $request) {
+        $months = array('' => '-select-', 1 => 'January', 2 => 'February', 3 => 'March',
+            4 => 'April', 5 => 'May', 6 => 'June', 7 => 'July',
+            8 => 'August', 9 => 'September', 10 => 'October',
+            11 => 'November', 12 => 'December');
+
         $payment = new Payment();
 
         $payment->shop_owner_id = $request->id;
@@ -115,6 +120,11 @@ class StoreOwnersController extends Controller {
         $payment->created_by = Auth::id();
 
         $payment->save();
+
+        $sms_message = "Thank you for making your payment of " . $request->amount_paid . " for the period of " .
+            $months[$request->month] . " " . $request->year;
+
+        send_sms(get_value_from_table($request->id, 'id', 'contact', 'store_owners'), $sms_message);
 
         return Redirect::to("/store_owners/view")->withSuccess('Shop owner payment has been processed successfully');
     }

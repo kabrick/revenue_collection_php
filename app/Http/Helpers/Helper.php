@@ -1,6 +1,17 @@
 <?php
 
 use AfricasTalking\SDK\AfricasTalking;
+use Illuminate\Support\Facades\DB;
+
+function get_value_from_table($id, $id_column, $name_column, $table) {
+    $result = DB::table($table)->where($id_column, $id)->first();
+
+    if (!$result) {
+        return 'N/A';
+    } else {
+        return $result->$name_column;
+    }
+}
 
 function send_sms($number, $message) {
     $username = 'revenue_collection';
@@ -13,6 +24,6 @@ function send_sms($number, $message) {
     // Use the service
     $result = $sms->send([
         'to'      => $number, // +256705003878
-        'message' => $message
+        'message' => $message . " - From Revenue Collection"
     ]);
 }
