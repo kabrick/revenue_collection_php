@@ -51,7 +51,7 @@
                     @endforeach
                 @else
                     <tr>
-                        <td colspan="6"><h4><code>No shop owners registered</code></h4></td>
+                        <td colspan="8" class="text-center"><h4><code>No shop owners registered</code></h4></td>
                     </tr>
                 @endif
                 </tbody>
