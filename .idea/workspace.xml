@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011f1e13-790c-404c-bdd5-45a4ff8d5cf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Helpers/Helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/peter_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/peter_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PenaltyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsersSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/store_owners/view.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store_owners/view.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,6 +170,7 @@
       <workItem from="1584074124308" duration="6034000" />
       <workItem from="1584165322820" duration="595000" />
       <workItem from="1589183846609" duration="7090000" />
+      <workItem from="1589260970059" duration="2838000" />
     </task>
     <servers />
   </component>

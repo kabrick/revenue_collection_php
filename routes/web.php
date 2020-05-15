@@ -37,3 +37,5 @@ Route::any('/settings/edit_penalty_fees', 'SettingsController@edit_penalty_fees'
 Route::any('/settings/save_penalty_fees', 'SettingsController@save_penalty_fees')->name('settings.save_penalty_fees');
 
 Route::any('/reports/payments', 'ReportsController@payments')->name('reports.payments');
+
+Route::any('/penalties/index', 'PenaltyController@index')->name('penalties.index');

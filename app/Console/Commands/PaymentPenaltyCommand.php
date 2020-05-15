@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\PaymentPenalty;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
@@ -55,7 +56,11 @@ class PaymentPenaltyCommand extends Command {
 
                 send_sms($owner->contact, $sms);
 
-                DB::insert('insert into payment_penalties (store_owner_id, month, year) values (?, ?, ?)', [$owner->id, Carbon::now()->month, Carbon::now()->year]);
+                $payment_penalty = new PaymentPenalty();
+                $payment_penalty->store_owner_id = $owner->id;
+                $payment_penalty->month = Carbon::now()->month;
+                $payment_penalty->year = Carbon::now()->year;
+                $payment_penalty->save();
             }
         }
     }

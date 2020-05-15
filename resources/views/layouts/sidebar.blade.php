@@ -34,7 +34,7 @@
             </ul>
         </li>
         <li>
-            <a href="#">Other</a>
+            <a href="{{ route('penalties.index') }}">Penalties</a>
         </li>
     </ul>
 
