@@ -21,11 +21,11 @@
     - composer update
     - npm i
     - php artisan key:generate
-    - php artisan migrate
+    - php artisan migrate --seed
     - php artisan serve
     ```
 
--   Other useful commands to debug:
+-   Other useful commands for debugging when in trouble:
 
     ```txt
     - composer dump-autoload
