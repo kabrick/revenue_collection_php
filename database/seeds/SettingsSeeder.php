@@ -12,6 +12,7 @@ class SettingsSeeder extends Seeder {
         \App\Settings::firstOrCreate([
             'retail' => 20000,
             'wholesale' => 50000,
+            'penalty' => 10000,
         ]);
     }
 }
